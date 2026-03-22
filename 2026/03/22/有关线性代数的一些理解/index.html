@@ -27,7 +27,7 @@
 <meta property="og:description" content="为什么行列式行列转置之后值不变?  考虑行列式的leibniz定义，n阶矩阵$A$的行列式定义为： $$|A|&#x3D;\sum_{\sigma\in S_n}sgn(\sigma)a_{1\sigma(1)}a_{2\sigma(2)}···a_{n\sigma(n)}$$ 其中$S_n$是1至n的全排列构成的集合（对称群），$\sigma$是其中的一个特定排列，$sgn(\sigma)$">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-03-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-03-22T02:59:44.084Z">
+<meta property="article:modified_time" content="2026-03-22T03:14:05.437Z">
 <meta property="article:author" content="goyeah">
 <meta property="article:tag" content="线性代数">
 <meta property="article:tag" content="考研">
@@ -224,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          656 字
+          666 字
         
       </span>
     
@@ -285,7 +285,8 @@
 <p>$$|A|&#x3D;\sum_{\sigma\in S_n}sgn(\sigma)a_{1\sigma(1)}a_{2\sigma(2)}···a_{n\sigma(n)}$$</p>
 <p>其中$S_n$是1至n的全排列构成的集合（对称群），$\sigma$是其中的一个特定排列，$sgn(\sigma)$是该排列的符号，则对于其转置有</p>
 <p>$$|A^T|&#x3D;|B|&#x3D;\sum_{\sigma\in S_n}sgn(\sigma)b_{1\sigma(1)}b_{2\sigma(2)}···b_{n\sigma(n)}&#x3D;\sum_{\sigma\in S_n}sgn(\sigma)a_{\sigma(1)1}a_{\sigma(2)2}···a_{\sigma(n)n}$$</p>
-<p>考虑排列$\sigma$的逆排列$\sigma^{-1}$ ，有$a_{\sigma(i)i}&#x3D;a_{\sigma(i)\sigma^{-1}(\sigma(i))}&#x3D;a_{\sigma^{-1}(k)k}$</p>
+<p>考虑排列$\sigma$的逆排列$\sigma^{-1}$ ，有</p>
+<p>$$a_{\sigma(i)i}&#x3D;a_{\sigma(i)\sigma^{-1}(\sigma(i))}&#x3D;a_{\sigma^{-1}(k)k}$$</p>
 <p>其中$k&#x3D;\sigma(i)$</p>
 <p>对行序号进行重排之后，原转置变为</p>
 <p>$$|A^T|&#x3D;|B|&#x3D;\sum_{\sigma\in S_n}sgn(\sigma)a_{\sigma(1)1}a_{\sigma(2)2}···a_{\sigma(n)n}&#x3D;\sum_{\sigma^{-1}\in S_n}sgn(\sigma^{-1})a_{1\sigma^{-1}(1)}a_{2\sigma^{-1}(2)}···a_{n\sigma^{-1}(n)}$$</p>
@@ -306,7 +307,7 @@
 <p>这时候我在想：不是说直接对换两行就变号吗，为什么一定是换相邻的变号？</p>
 </blockquote>
 <p>事实上都是对的，对换两行和交换相邻行都会变号，因为对换两行可以看成通过不断交换相邻行达到（把上面的换下来，下面的换上去，对于相隔n行就是换了2n+1次）</p>
-<p>而且在高维空间中反正可以认为行行正交，就相当于直接变号了，写成$\frac{n\times{(n-1)}}{2}$和$\lfloor\frac{n}{2}\rfloor$本质上是一样的，只是前面的就很好算了</p>
+<p>在几何视角下就是翻转了所选取的两个向量构成的平面，有向体积就相当于直接变号了，写成$\frac{n\times{(n-1)}}{2}$和$\lfloor\frac{n}{2}\rfloor$本质上是一样的，只是前面的就很好算了</p>
 <blockquote>
 <p>就好像形如$\begin{vmatrix}O&amp;B\\A&amp;C\end{vmatrix}$ 其中$A$是m阶矩阵，$B$是n阶矩阵，$|A|\times|B|$前面的系数就是$(-1)^{mn}$</p>
 <p>2026.3.22</p>
