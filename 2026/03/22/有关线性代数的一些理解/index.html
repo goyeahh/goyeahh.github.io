@@ -27,7 +27,7 @@
 <meta property="og:description" content="为什么行列式行列转置之后值不变?  考虑行列式的leibniz定义，n阶矩阵$A$的行列式定义为： $$|A|&#x3D;\sum_{\sigma\in S_n}sgn(\sigma)a_{1\sigma(1)}a_{2\sigma(2)}···a_{n\sigma(n)}$$ 其中$S_n$是1至n的全排列构成的集合（对称群），$\sigma$是其中的一个特定排列，$sgn(\sigma)$">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-03-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-03-22T08:21:10.687Z">
+<meta property="article:modified_time" content="2026-03-23T17:10:17.027Z">
 <meta property="article:author" content="goyeah">
 <meta property="article:tag" content="线性代数">
 <meta property="article:tag" content="考研">
@@ -224,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          849 字
+          1.3k 字
         
       </span>
     
@@ -235,7 +235,7 @@
         
         
         
-          8 分钟
+          11 分钟
         
       </span>
     
@@ -317,12 +317,30 @@
 <p>为什么把行列式的某一行（列）加上其他行（列）的线性组合，行列式值不变</p>
 </blockquote>
 <p>虽然还没有学到，但是矩阵不满秩的时候行列式值为0，当行列式不为0的时候矩阵满秩，即空间维度是满的</p>
-<p>那么某一行显然不在其他行所构成的超平面中，就可以分解成垂直超平面和平行超平面两个分量，线性组合只能影响平行超平面的分量，但行列式的值（有向体积）只与垂直超平面的分量有关，就好像把一叠导学案推斜了题量不变一样（确信）。</p>
+<p>那么某一行显然不在其他行所构成的超平面中，就可以分解成垂直超平面和平行超平面两个分量，线性组合只能影响平行超平面的分量，但行列式的值（有向体积）只与垂直超平面的分量有关，就好像把一叠导学案推斜了题量不变一样（确信）</p>
 <blockquote>
 <p>klh: 诶诶祖暅原理</p>
 <p>2026.3.22</p>
 </blockquote>
 <hr>
+<blockquote>
+<p>Vandermonde行列式的值为什么是那个样子？看起来多少有点美妙了</p>
+</blockquote>
+<p>非常经典的教科书方法是数学归纳法</p>
+<p>另一种方法是通过不断消去一个目前i最小的$x_i$行来把行列式降阶，并不断提取出$\prod\limits_{i&lt;j \le n}(x_j-x_i)$项</p>
+<p>还有一种很优美的方法，我们知道行列式是高维空间的体积，这样构成这个高维体积的向量即是起点在原点，终点在函数 $f(x)&#x3D;1+x+x^2+···+x^{n-1}$上的向量 $$v_i &#x3D; (1, x_i, x_i^2, \dots, x_i^{n-1})$$，因此当 $x_i&#x3D;x_j$时会导致两个向量重合，即体积失去一个维度，结果必然为0，这说明结果多项式必然包含 $(x_j - x<br>_i)$ 作为一个因式</p>
+<p>因为这个逻辑对任意一对向量 $v_<br>i$ 和 $v_j$ 都成立，所以这个体积公式必须能被所有的 $(x_j - x_i)$ 整除。也就是说，体积公式的核心框架必然包含连乘积 $\prod\limits_{1 \le i<br>&lt;j \le n} (x_j - x_i)$</p>
+<p>而包含了这个连乘积后，公式的次数已经达到了$\frac{n(n-1)}{2}$次，因此不可能包含更多的变量因式，因此只要确定一个未定常系数</p>
+<p>为了确定这个系数，我们只需要比较两边某一个特定项的系数</p>
+<ul>
+<li>在行列式中，主对角线元素的乘积是 $1 \cdot x_2 \cdot x_3^2 \cdots x_n^{n-1}$</li>
+<li>在连乘积 $\prod\limits_{1 \le i&lt;j \le n} (x_j - x_i)$ 中，如果我们每次都从括号里挑出 $x_j$ 相乘，得到的恰好也是 $x_2 \cdot x_3^2 \cdots x_n^{n-1}$</li>
+</ul>
+<p>因此这个系数是 $1$</p>
+<blockquote>
+<p>是不是很像量纲分析 “哎这个题目还有一个方法，学竞赛的同学就知道了，来fhz给大家说一下吧”</p>
+<p>2026.3.24</p>
+</blockquote>
 
                 
               </div>
