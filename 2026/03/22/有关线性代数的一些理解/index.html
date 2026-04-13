@@ -27,7 +27,7 @@
 <meta property="og:description" content="为什么行列式行列转置之后值不变？ 考虑行列式的leibniz定义，n阶矩阵$A$的行列式定义为： $$|A|&#x3D;\sum_{\sigma\in S_n}sgn(\sigma)a_{1\sigma(1)}a_{2\sigma(2)}···a_{n\sigma(n)}$$ 其中$S_n$是1至n的全排列构成的集合（对称群），$\sigma$是其中的一个特定排列，$sgn(\sigma)$是该排列的符号">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-03-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-04-13T14:04:52.996Z">
+<meta property="article:modified_time" content="2026-04-13T14:06:35.772Z">
 <meta property="article:author" content="goyeah">
 <meta property="article:tag" content="线性代数">
 <meta property="article:tag" content="考研">
@@ -408,7 +408,7 @@ mjx-container[display="true"] + br {
 <p>2026.3.22</p>
 </blockquote>
 <hr>
-<h3 id="为什么副对角线行列式计算前面的系数是-MATHINLINE-29-？"><a href="#为什么副对角线行列式计算前面的系数是-MATHINLINE-29-？" class="headerlink" title="为什么副对角线行列式计算前面的系数是$(-1)^{\frac{n\times{(n-1)}}{2}}$？"></a>为什么副对角线行列式计算前面的系数是$(-1)^{\frac{n\times{(n-1)}}{2}}$？</h3><hr>
+<h3 id="为什么副对角线行列式计算前面的系数是-MATHINLINE-22-？"><a href="#为什么副对角线行列式计算前面的系数是-MATHINLINE-22-？" class="headerlink" title="为什么副对角线行列式计算前面的系数是$(-1)^{\frac{n\times{(n-1)}}{2}}$？"></a>为什么副对角线行列式计算前面的系数是$(-1)^{\frac{n\times{(n-1)}}{2}}$？</h3><hr>
 <p>从几何的视角来看，行列式即是高维空间中的有向体积，而交换相邻的行（列）会让有向体积变号，而对于N阶的副对角线行列式转化为主对角线行列式则需要相邻调换$\frac{n\times{(n-1)}}{2}$次</p>
 <blockquote>
 <p>多嘴：莫名其妙想到了冒泡排序</p>
@@ -466,7 +466,7 @@ mjx-container[display="true"] + br {
 <p>2026.3.30</p>
 </blockquote>
 <hr>
-<h3 id="矩阵运算不满足交换律和消去律，那如果我们知道-MATHINLINE-77-，显然这不一定意味着-MATHINLINE-78-或者-MATHINLINE-79-，这意味着什么呢？-MATHINLINE-80-不代表-MATHINLINE-81-，那又代表什么呢？"><a href="#矩阵运算不满足交换律和消去律，那如果我们知道-MATHINLINE-77-，显然这不一定意味着-MATHINLINE-78-或者-MATHINLINE-79-，这意味着什么呢？-MATHINLINE-80-不代表-MATHINLINE-81-，那又代表什么呢？" class="headerlink" title="矩阵运算不满足交换律和消去律，那如果我们知道$AB=O$，显然这不一定意味着$A=O$ 或者$B=O$ ，这意味着什么呢？$AB=AC$ 不代表$B=C$ ，那又代表什么呢？"></a>矩阵运算不满足交换律和消去律，那如果我们知道$AB=O$，显然这不一定意味着$A=O$ 或者$B=O$ ，这意味着什么呢？$AB=AC$ 不代表$B=C$ ，那又代表什么呢？</h3><hr>
+<h3 id="矩阵运算不满足交换律和消去律，那如果我们知道-MATHINLINE-70-，显然这不一定意味着-MATHINLINE-71-或者-MATHINLINE-72-，这意味着什么呢？-MATHINLINE-73-不代表-MATHINLINE-74-，那又代表什么呢？"><a href="#矩阵运算不满足交换律和消去律，那如果我们知道-MATHINLINE-70-，显然这不一定意味着-MATHINLINE-71-或者-MATHINLINE-72-，这意味着什么呢？-MATHINLINE-73-不代表-MATHINLINE-74-，那又代表什么呢？" class="headerlink" title="矩阵运算不满足交换律和消去律，那如果我们知道$AB=O$，显然这不一定意味着$A=O$ 或者$B=O$ ，这意味着什么呢？$AB=AC$ 不代表$B=C$ ，那又代表什么呢？"></a>矩阵运算不满足交换律和消去律，那如果我们知道$AB=O$，显然这不一定意味着$A=O$ 或者$B=O$ ，这意味着什么呢？$AB=AC$ 不代表$B=C$ ，那又代表什么呢？</h3><hr>
 <p>矩阵变换是从空间到空间的变换，既然最终的结果出现了零矩阵，说明任意一个向量经过$B$ 矩阵和$A$ 矩阵变换丢失了所有的空间信息（被压到原点去了），即矩阵 $B$ 的值域被完全包含在矩阵 $A$ 的零空间中</p>
 <p>Sylvester 不等式：$\text{rank}(A) + \text{rank}(B) \leq n$，其中 $n$ 是中间维度。这表示 $A$ 抹除维度的能力必须足以覆盖 $B$ 保留维度的能力</p>
 <ul>
@@ -484,7 +484,7 @@ mjx-container[display="true"] + br {
 <p>2026.3.30</p>
 </blockquote>
 <hr>
-<h3 id="为什么-MATHINLINE-116-是同阶可逆方阵，但是-MATHINLINE-117-不一定可逆呢？"><a href="#为什么-MATHINLINE-116-是同阶可逆方阵，但是-MATHINLINE-117-不一定可逆呢？" class="headerlink" title="为什么$A,B$ 是同阶可逆方阵，但是$A+B$ 不一定可逆呢？"></a>为什么$A,B$ 是同阶可逆方阵，但是$A+B$ 不一定可逆呢？</h3><hr>
+<h3 id="为什么-MATHINLINE-109-是同阶可逆方阵，但是-MATHINLINE-110-不一定可逆呢？"><a href="#为什么-MATHINLINE-109-是同阶可逆方阵，但是-MATHINLINE-110-不一定可逆呢？" class="headerlink" title="为什么$A,B$ 是同阶可逆方阵，但是$A+B$ 不一定可逆呢？"></a>为什么$A,B$ 是同阶可逆方阵，但是$A+B$ 不一定可逆呢？</h3><hr>
 <p>从行列式的角度来看就是$det(A+B) \neq det(A) + det(B)$ </p>
 <p>也就是说$A+B$ 产生了新的包含非零向量的零空间</p>
 <blockquote>
@@ -494,7 +494,7 @@ mjx-container[display="true"] + br {
 </blockquote>
 <hr>
 <h3 id="伴随矩阵为什么有那么多公式？"><a href="#伴随矩阵为什么有那么多公式？" class="headerlink" title="伴随矩阵为什么有那么多公式？"></a>伴随矩阵为什么有那么多公式？</h3><hr>
-<h4 id="MATHINLINE-120"><a href="#MATHINLINE-120" class="headerlink" title="$AA^* = A^*A = |A|E$"></a>$AA^* = A^*A = |A|E$</h4><hr>
+<h4 id="MATHINLINE-113"><a href="#MATHINLINE-113" class="headerlink" title="$AA^* = A^*A = |A|E$"></a>$AA^* = A^*A = |A|E$</h4><hr>
 <p>设 $A$ 是一个 $n$ 阶矩阵：</p>
 <p>$$A = \begin{pmatrix} 
 a_{11} & a_{12} & \cdots & a_{1n} \\
@@ -530,21 +530,21 @@ A_{1n} & A_{2n} & \cdots & A_{nn}
 \vdots & \vdots & \ddots & \vdots \\
 0 & 0 & \cdots & 1
 \end{pmatrix}$$</p>
-<p>即 $$AA^* = |A|E$$</p>
-<p>不难看出反之亦然，即 $$AA^* = A^*A = |A|E$$</p>
+<p>即 $AA^* = |A|E$</p>
+<p>不难看出反之亦然，即 $AA^* = A^*A = |A|E$</p>
 <hr>
-<h4 id="MATHINLINE-148"><a href="#MATHINLINE-148" class="headerlink" title="$|A^*| = |A|^{n-1}$"></a>$|A^*| = |A|^{n-1}$</h4><hr>
+<h4 id="MATHINLINE-143"><a href="#MATHINLINE-143" class="headerlink" title="$|A^*| = |A|^{n-1}$"></a>$|A^*| = |A|^{n-1}$</h4><hr>
 <p>$|AA^*| = ||A|E| = |A|^n = |A|\times|A^*|$ </p>
 <p>则 $|A^*| = |A|^{n-1}$</p>
 <hr>
-<h4 id="MATHINLINE-151-，-MATHINLINE-152-，-MATHINLINE-153"><a href="#MATHINLINE-151-，-MATHINLINE-152-，-MATHINLINE-153" class="headerlink" title="$A^*=|A|A^{-1}$  ，$A^{-1}= \frac{1}{|A|}A^*$ ，$A=|A|(A^*)^{-1}$"></a>$A^*=|A|A^{-1}$  ，$A^{-1}= \frac{1}{|A|}A^*$ ，$A=|A|(A^*)^{-1}$</h4><hr>
+<h4 id="MATHINLINE-146-，-MATHINLINE-147-，-MATHINLINE-148"><a href="#MATHINLINE-146-，-MATHINLINE-147-，-MATHINLINE-148" class="headerlink" title="$A^*=|A|A^{-1}$  ，$A^{-1}= \frac{1}{|A|}A^*$ ，$A=|A|(A^*)^{-1}$"></a>$A^*=|A|A^{-1}$  ，$A^{-1}= \frac{1}{|A|}A^*$ ，$A=|A|(A^*)^{-1}$</h4><hr>
 <p>简单利用 $E=AA^{-1}$ 移项易得到上面的式子</p>
 <hr>
-<h4 id="MATHINLINE-155"><a href="#MATHINLINE-155" class="headerlink" title="$(A^*)^* = |A|^{n-2}A$"></a>$(A^*)^* = |A|^{n-2}A$</h4><hr>
-<p>由于 $$A^*(A^*)^* = |A^*|E$$ , 而 $$A^*=|A|A^{-1}$$ ,  $$|A^*| = |A|^{n-1}$$</p>
-<p>移项可得 $$(A^*)^* = |A|^{n-2}A$$</p>
+<h4 id="MATHINLINE-150"><a href="#MATHINLINE-150" class="headerlink" title="$(A^*)^* = |A|^{n-2}A$"></a>$(A^*)^* = |A|^{n-2}A$</h4><hr>
+<p>由于 $A^*(A^*)^* = |A^*|E$ , 而 $A^*=|A|A^{-1}$ ,  $|A^*| = |A|^{n-1}$</p>
+<p>移项可得 $(A^*)^* = |A|^{n-2}A$</p>
 <blockquote>
-<p>n=2时退化到 $$(A^*)^* = A$$</p>
+<p>n=2时退化到 $(A^*)^* = A$</p>
 </blockquote>
 <blockquote>
 <p>张宇上面实在是有太多公式了……虽然大多数是排列组合弄出来的，上面只列举了几个比较重要的</p>
