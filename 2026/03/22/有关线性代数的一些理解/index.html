@@ -19,15 +19,15 @@
   <meta name="author" content="goyeah">
   <meta name="keywords" content="">
   
-    <meta name="description" content="为什么行列式行列转置之后值不变? 考虑行列式的leibniz定义，n阶矩阵$A$的行列式定义为： $$|A|&#x3D;\sum_{\sigma\in S_n}sgn(\sigma)a_{1\sigma(1)}a_{2\sigma(2)}···a_{n\sigma(n)}$$ 其中$S_n$是1至n的全排列构成的集合（对称群），$\sigma$是其中的一个特定排列，$sgn(\sigma)$是该排列的符号">
+    <meta name="description" content="为什么行列式行列转置之后值不变？ 考虑行列式的leibniz定义，n阶矩阵$A$的行列式定义为： $$|A|&#x3D;\sum_{\sigma\in S_n}sgn(\sigma)a_{1\sigma(1)}a_{2\sigma(2)}···a_{n\sigma(n)}$$ 其中$S_n$是1至n的全排列构成的集合（对称群），$\sigma$是其中的一个特定排列，$sgn(\sigma)$是该排列的符号">
 <meta property="og:type" content="article">
 <meta property="og:title" content="有关线性代数的一些理解">
 <meta property="og:url" content="https://goyeah.org/2026/03/22/%E6%9C%89%E5%85%B3%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/index.html">
 <meta property="og:site_name" content="Goyeah&#39;s Blog">
-<meta property="og:description" content="为什么行列式行列转置之后值不变? 考虑行列式的leibniz定义，n阶矩阵$A$的行列式定义为： $$|A|&#x3D;\sum_{\sigma\in S_n}sgn(\sigma)a_{1\sigma(1)}a_{2\sigma(2)}···a_{n\sigma(n)}$$ 其中$S_n$是1至n的全排列构成的集合（对称群），$\sigma$是其中的一个特定排列，$sgn(\sigma)$是该排列的符号">
+<meta property="og:description" content="为什么行列式行列转置之后值不变？ 考虑行列式的leibniz定义，n阶矩阵$A$的行列式定义为： $$|A|&#x3D;\sum_{\sigma\in S_n}sgn(\sigma)a_{1\sigma(1)}a_{2\sigma(2)}···a_{n\sigma(n)}$$ 其中$S_n$是1至n的全排列构成的集合（对称群），$\sigma$是其中的一个特定排列，$sgn(\sigma)$是该排列的符号">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-03-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-04-01T16:56:32.049Z">
+<meta property="article:modified_time" content="2026-04-13T13:44:48.939Z">
 <meta property="article:author" content="goyeah">
 <meta property="article:tag" content="线性代数">
 <meta property="article:tag" content="考研">
@@ -336,7 +336,7 @@ mjx-container[display="true"] + br {
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.4k 字
+          3.8k 字
         
       </span>
     
@@ -347,7 +347,7 @@ mjx-container[display="true"] + br {
         
         
         
-          20 分钟
+          32 分钟
         
       </span>
     
@@ -390,7 +390,7 @@ mjx-container[display="true"] + br {
               <div class="markdown-body">
                 
                 <hr>
-<h4 id="为什么行列式行列转置之后值不变"><a href="#为什么行列式行列转置之后值不变" class="headerlink" title="为什么行列式行列转置之后值不变?"></a>为什么行列式行列转置之后值不变?</h4><hr>
+<h4 id="为什么行列式行列转置之后值不变？"><a href="#为什么行列式行列转置之后值不变？" class="headerlink" title="为什么行列式行列转置之后值不变？"></a>为什么行列式行列转置之后值不变？</h4><hr>
 <p>考虑行列式的leibniz定义，n阶矩阵$A$的行列式定义为：</p>
 <p>$$|A|=\sum_{\sigma\in S_n}sgn(\sigma)a_{1\sigma(1)}a_{2\sigma(2)}···a_{n\sigma(n)}$$</p>
 <p>其中$S_n$是1至n的全排列构成的集合（对称群），$\sigma$是其中的一个特定排列，$sgn(\sigma)$是该排列的符号，则对于其转置有</p>
@@ -408,7 +408,7 @@ mjx-container[display="true"] + br {
 <p>2026.3.22</p>
 </blockquote>
 <hr>
-<h4 id="为什么副对角线行列式计算前面的系数是-MATHINLINE-19"><a href="#为什么副对角线行列式计算前面的系数是-MATHINLINE-19" class="headerlink" title="为什么副对角线行列式计算前面的系数是$(-1)^{\frac{n\times{(n-1)}}{2}}$"></a>为什么副对角线行列式计算前面的系数是$(-1)^{\frac{n\times{(n-1)}}{2}}$</h4><hr>
+<h4 id="为什么副对角线行列式计算前面的系数是-MATHINLINE-35-？"><a href="#为什么副对角线行列式计算前面的系数是-MATHINLINE-35-？" class="headerlink" title="为什么副对角线行列式计算前面的系数是$(-1)^{\frac{n\times{(n-1)}}{2}}$？"></a>为什么副对角线行列式计算前面的系数是$(-1)^{\frac{n\times{(n-1)}}{2}}$？</h4><hr>
 <p>从几何的视角来看，行列式即是高维空间中的有向体积，而交换相邻的行（列）会让有向体积变号，而对于N阶的副对角线行列式转化为主对角线行列式则需要相邻调换$\frac{n\times{(n-1)}}{2}$次</p>
 <blockquote>
 <p>多嘴：莫名其妙想到了冒泡排序</p>
@@ -421,7 +421,7 @@ mjx-container[display="true"] + br {
 <p>2026.3.22</p>
 </blockquote>
 <hr>
-<h4 id="为什么把行列式的某一行（列）加上其他行（列）的线性组合，行列式值不变"><a href="#为什么把行列式的某一行（列）加上其他行（列）的线性组合，行列式值不变" class="headerlink" title="为什么把行列式的某一行（列）加上其他行（列）的线性组合，行列式值不变"></a>为什么把行列式的某一行（列）加上其他行（列）的线性组合，行列式值不变</h4><hr>
+<h4 id="为什么把行列式的某一行（列）加上其他行（列）的线性组合，行列式值不变？"><a href="#为什么把行列式的某一行（列）加上其他行（列）的线性组合，行列式值不变？" class="headerlink" title="为什么把行列式的某一行（列）加上其他行（列）的线性组合，行列式值不变？"></a>为什么把行列式的某一行（列）加上其他行（列）的线性组合，行列式值不变？</h4><hr>
 <p>虽然还没有学到，但是矩阵不满秩的时候行列式值为0，当行列式不为0的时候矩阵满秩，即空间维度是满的</p>
 <p>那么某一行显然不在其他行所构成的超平面中，就可以分解成垂直超平面和平行超平面两个分量，线性组合只能影响平行超平面的分量，但行列式的值（有向体积）只与垂直超平面的分量有关，就好像把一叠导学案推斜了题量不变一样（确信）</p>
 <blockquote>
@@ -466,7 +466,7 @@ mjx-container[display="true"] + br {
 <p>2026.3.30</p>
 </blockquote>
 <hr>
-<h4 id="矩阵运算不满足交换律和消去律，那如果我们知道-MATHINLINE-67-，显然这不一定意味着-MATHINLINE-68-或者-MATHINLINE-69-，这意味着什么呢？-MATHINLINE-70-不代表-MATHINLINE-71-，那又代表什么呢？"><a href="#矩阵运算不满足交换律和消去律，那如果我们知道-MATHINLINE-67-，显然这不一定意味着-MATHINLINE-68-或者-MATHINLINE-69-，这意味着什么呢？-MATHINLINE-70-不代表-MATHINLINE-71-，那又代表什么呢？" class="headerlink" title="矩阵运算不满足交换律和消去律，那如果我们知道$AB=O$，显然这不一定意味着$A=O$ 或者$B=O$ ，这意味着什么呢？$AB=AC$ 不代表$B=C$ ，那又代表什么呢？"></a>矩阵运算不满足交换律和消去律，那如果我们知道$AB=O$，显然这不一定意味着$A=O$ 或者$B=O$ ，这意味着什么呢？$AB=AC$ 不代表$B=C$ ，那又代表什么呢？</h4><hr>
+<h4 id="矩阵运算不满足交换律和消去律，那如果我们知道-MATHINLINE-83-，显然这不一定意味着-MATHINLINE-84-或者-MATHINLINE-85-，这意味着什么呢？-MATHINLINE-86-不代表-MATHINLINE-87-，那又代表什么呢？"><a href="#矩阵运算不满足交换律和消去律，那如果我们知道-MATHINLINE-83-，显然这不一定意味着-MATHINLINE-84-或者-MATHINLINE-85-，这意味着什么呢？-MATHINLINE-86-不代表-MATHINLINE-87-，那又代表什么呢？" class="headerlink" title="矩阵运算不满足交换律和消去律，那如果我们知道$AB=O$，显然这不一定意味着$A=O$ 或者$B=O$ ，这意味着什么呢？$AB=AC$ 不代表$B=C$ ，那又代表什么呢？"></a>矩阵运算不满足交换律和消去律，那如果我们知道$AB=O$，显然这不一定意味着$A=O$ 或者$B=O$ ，这意味着什么呢？$AB=AC$ 不代表$B=C$ ，那又代表什么呢？</h4><hr>
 <p>矩阵变换是从空间到空间的变换，既然最终的结果出现了零矩阵，说明任意一个向量经过$B$ 矩阵和$A$ 矩阵变换丢失了所有的空间信息（被压到原点去了），即矩阵 $B$ 的值域被完全包含在矩阵 $A$ 的零空间中</p>
 <p>Sylvester 不等式：$\text{rank}(A) + \text{rank}(B) \leq n$，其中 $n$ 是中间维度。这表示 $A$ 抹除维度的能力必须足以覆盖 $B$ 保留维度的能力</p>
 <ul>
@@ -484,7 +484,7 @@ mjx-container[display="true"] + br {
 <p>2026.3.30</p>
 </blockquote>
 <hr>
-<h4 id="为什么-MATHINLINE-106-是同阶可逆方阵，但是-MATHINLINE-107-不一定可逆呢？"><a href="#为什么-MATHINLINE-106-是同阶可逆方阵，但是-MATHINLINE-107-不一定可逆呢？" class="headerlink" title="为什么$A,B$ 是同阶可逆方阵，但是$A+B$ 不一定可逆呢？"></a>为什么$A,B$ 是同阶可逆方阵，但是$A+B$ 不一定可逆呢？</h4><hr>
+<h4 id="为什么-MATHINLINE-122-是同阶可逆方阵，但是-MATHINLINE-123-不一定可逆呢？"><a href="#为什么-MATHINLINE-122-是同阶可逆方阵，但是-MATHINLINE-123-不一定可逆呢？" class="headerlink" title="为什么$A,B$ 是同阶可逆方阵，但是$A+B$ 不一定可逆呢？"></a>为什么$A,B$ 是同阶可逆方阵，但是$A+B$ 不一定可逆呢？</h4><hr>
 <p>从行列式的角度来看就是$det(A+B) \neq det(A) + det(B)$ </p>
 <p>也就是说$A+B$ 产生了新的包含非零向量的零空间</p>
 <blockquote>
@@ -493,6 +493,122 @@ mjx-container[display="true"] + br {
 <p>2026.4.2</p>
 </blockquote>
 <hr>
+<h4 id="伴随矩阵为什么有那么多公式？"><a href="#伴随矩阵为什么有那么多公式？" class="headerlink" title="伴随矩阵为什么有那么多公式？"></a>伴随矩阵为什么有那么多公式？</h4><hr>
+<h5 id="MATHBLOCK-11"><a href="#MATHBLOCK-11" class="headerlink" title="$$AA^* = A^*A = |A|E$$"></a>$$AA^* = A^*A = |A|E$$</h5><hr>
+<p>设 $A$ 是一个 $n$ 阶矩阵：</p>
+<p>$$A = \begin{pmatrix} 
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{nn}
+\end{pmatrix}$$</p>
+<p>其伴随矩阵 $A^*$ 是由 $A$ 的各元素的代数余子式 $A_{ij}$ 构成的转置矩阵：</p>
+<p>$$A^* = \begin{pmatrix} 
+A_{11} & A_{21} & \cdots & A_{n1} \\
+A_{12} & A_{22} & \cdots & A_{n2} \\
+\vdots & \vdots & \ddots & \vdots \\
+A_{1n} & A_{2n} & \cdots & A_{nn}
+\end{pmatrix}$$</p>
+<blockquote>
+<p><strong>注意</strong>：$A^*$ 的第 $i$ 行由 $A$ 的第 $i$ <strong>列</strong>元素的代数余子式组成</p>
+</blockquote>
+<p>设 $C = AA^*$，其中 $C$ 的第 $i$ 行第 $j$ 列元素 $c_{ij}$ 为 $c_{ij} = \sum_{k=1}^{n} a_{ik} (A^*) _{kj}$</p>
+<p>根据 $A^*$ 的定义，$(A^*) _{kj} = A_{jk}$，代入上式得 $c_{ij} = \sum_{k=1}^{n} a_{ik} A_{jk}$</p>
+<p>$i = j$ 时（对角线元素）$c_{ii} = \sum_{k=1}^{n} a_{ik} A_{ik}$</p>
+<p>这恰好是矩阵 $A$ 的行列式 $c_{ii} = |A|$</p>
+<p>$i \neq j$ 时（非对角线元素）$c_{ij} = \sum_{k=1}^{n} a_{ik} A_{jk} \quad (i \neq j)$</p>
+<p>这相当于一个新矩阵的行列式，该矩阵的第 $j$ 行被替换成了第 $i$ 行，导致矩阵中有两行完全相同。根据行列式性质<br> $c_{ij} = 0$</p>
+<p>综上</p>
+<p>$$AA^* = \begin{pmatrix} 
+|A| & 0 & \cdots & 0 \\
+0 & |A| & \cdots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & |A|
+\end{pmatrix} = |A| \begin{pmatrix} 
+1 & 0 & \cdots & 0 \\
+0 & 1 & \cdots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & 1
+\end{pmatrix}$$</p>
+<p>即 $$AA^* = |A|E$$</p>
+<p>不难看出反之亦然，即 $$AA^* = A^*A = |A|E$$</p>
+<hr>
+<h5 id="MATHBLOCK-17"><a href="#MATHBLOCK-17" class="headerlink" title="$$|A^*| = |A|^{n-1}$$"></a>$$|A^*| = |A|^{n-1}$$</h5><hr>
+<p>$|AA^*| = ||A|E| = |A|^n = |A|\times|A^*|$ </p>
+<p>则 $|A^*| = |A|^{n-1}$</p>
+<hr>
+<h5 id="MATHBLOCK-18-MATHBLOCK-19-MATHBLOCK-20"><a href="#MATHBLOCK-18-MATHBLOCK-19-MATHBLOCK-20" class="headerlink" title="$$A^*=|A|A^{-1}$$ ,  $$A^{-1}= \frac{1}{|A|}A^*$$ ,  $$A = |A|(A^*)^{-1}$$"></a>$$A^*=|A|A^{-1}$$ ,  $$A^{-1}= \frac{1}{|A|}A^*$$ ,  $$A = |A|(A^*)^{-1}$$</h5><hr>
+<p>简单利用 $E=AA^{-1}$ 移项易得到上面的式子</p>
+<hr>
+<h5 id="MATHBLOCK-21"><a href="#MATHBLOCK-21" class="headerlink" title="$$(A^*)^* = |A|^{n-2}A$$"></a>$$(A^*)^* = |A|^{n-2}A$$</h5><hr>
+<p>由于 $$A^*(A^*)^* = |A^*|E$$ , 而 $$A^*=|A|A^{-1}$$ ,  $$|A^*| = |A|^{n-1}$$</p>
+<p>移项可得 $$(A^*)^* = |A|^{n-2}A$$</p>
+<blockquote>
+<p>n=2时退化到 $$(A^*)^* = A$$</p>
+</blockquote>
+<blockquote>
+<p>张宇上面实在是有太多公式了……虽然大多数是排列组合弄出来的，上面只列举了几个比较重要的</p>
+<p>2026.4.13</p>
+</blockquote>
+<hr>
+<h4 id="伴随矩阵的几何意义是什么？伴随矩阵，原矩阵，逆矩阵之间是什么关系？为什么伴随矩阵的形式里面有那么多余子式？"><a href="#伴随矩阵的几何意义是什么？伴随矩阵，原矩阵，逆矩阵之间是什么关系？为什么伴随矩阵的形式里面有那么多余子式？" class="headerlink" title="伴随矩阵的几何意义是什么？伴随矩阵，原矩阵，逆矩阵之间是什么关系？为什么伴随矩阵的形式里面有那么多余子式？"></a>伴随矩阵的几何意义是什么？伴随矩阵，原矩阵，逆矩阵之间是什么关系？为什么伴随矩阵的形式里面有那么多余子式？</h4><hr>
+<blockquote>
+<p>刚学到伴随矩阵的时候就很纳闷为什么搞出来这么一个东西还有那么一大堆公式</p>
+</blockquote>
+<p>在 $n$ 维空间中，矩阵 $A$ 的 $n$ 个列向量撑起了一个 $n$ 维的平行多面体,  其有向体积为 $|A|$</p>
+<p>如果我们从中抽走第 $j$ 个列向量，剩下的 $n-1$ 个列向量会张成一个 $n-1$ 维的超平面，这个面拥有两个极其重要的几何属性：</p>
+<p><strong>超面积</strong>：这 $n-1$ 个向量所围成区域的大小</p>
+<p><strong>法线方向</strong>：在 $n$ 维空间中，唯一与这 $n-1$ 个向量都绝对正交的方向</p>
+<p>伴随矩阵 $A^*$ 的第 $j$ 列，正是这个超平面的<strong>法面积向量</strong></p>
+<p>它的方向严格垂直于那 $n-1$ 个向量构成的超平面，而它的模长正好等于那个超平面的超面积</p>
+<hr>
+<blockquote>
+<p>$A$、$A^*$ 与 $A^{-1}$ 的算子协作</p>
+</blockquote>
+<p>原矩阵 $A$ 将标准正交基拉伸、倾斜成 $n$ 个新的列向量，空间的体积膨胀了 $|A|$ 倍</p>
+<p>伴随矩阵 $A^*$ 为 $A$ 中的每一个列向量，找到了一个不受其他列向量干扰，即垂直于其他列向量的法线方向</p>
+<ul>
+<li>当我们计算 $AA^*$ 时，意味着用 $A$ 的列向量去投影到 $A^*$ 的法向量上</li>
+<li>由于几何上的正交性，第 $i$ 个列向量投影到其他面的法向量上结果必然为 $0$。只有投影到它自己的法向量上时，计算的是 底面积 $\times$ 高，还原出整个空间的总体积 $|A|$。因此 $A \cdot A^* = |A|E$</li>
+</ul>
+<p>逆矩阵的目标是把空间变回原样。它直接借用了 $A^*$ 提供的完美正交方向，但因为 $A^*$ 的模是超平面的面积，会导致点乘后变成体积，所以必须除以总体积 $|A|$，将尺度缩放回正确的比例。即 $A^{-1} = \frac{1}{|A|} A^*$</p>
+<hr>
+<blockquote>
+<p>从伴随矩阵到<strong>法面积向量</strong>到余子式</p>
+</blockquote>
+<p>在高维空间几何下，伴随矩阵、<strong>法面积向量</strong>与余子式构成了一条降维关系，可以浓缩为以下三个层级</p>
+<ul>
+<li><p>第一层：伴随矩阵 $\to$ 法向量</p>
+<p>上面已经提到，伴随矩阵 $A^*$ 的<strong>第 $j$ 列</strong>，就是这个 $(n-1)$ 维超平面的<strong>法面积向量</strong></p>
+<p>方向垂直于超平面，模长等于该面的 $(n-1)$ 维超面积</p>
+</li>
+<li><p>第二层：<strong>法面积向量</strong> $\to$ 坐标分量</p>
+<p>一个 $(n-1)$ 维法向量在第 $i$ 个坐标轴上的分量长度，究竟有多大？</p>
+<blockquote>
+<p><strong>法面积向量在第 $i$ 轴的分量大小 $\equiv$ 原超平面在“正交于第 $i$ 轴的坐标超平面”上的投影超面积</strong></p>
+</blockquote>
+</li>
+<li><p>第三层：坐标分量 $\to$ 余子式</p>
+<p>如何在矩阵里算出这个超平面在正交于第 $i$ 轴墙面上的投影超面积？</p>
+</li>
+</ul>
+<ol>
+<li><p><strong>锁定超平面</strong>：划掉第 $j$ 列（选定由 $n-1$ 个向量构成的超平面）</p>
+</li>
+<li><p><strong>执行投影</strong>：划掉第 $i$ 行（去除这 $n-1$ 个向量的第 $i$ 个坐标维度，完成向正交$i$轴超平面的投影）</p>
+</li>
+<li><p><strong>算体积</strong>：计算剩下元素的行列式</p>
+<p>这个行列式的值正是划掉第 $i$ 行、第 $j$ 列算出的余子式 $M_{ij}$</p>
+</li>
+</ol>
+<blockquote>
+<p>乘上 $(-1)^{i+j}$ 升级为代数余子式 $A_{ij}$ 确保法向量朝外指。</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>数形结合的魅力！</p>
+<p>2026.4.13</p>
+</blockquote>
 
                 
               </div>
