@@ -27,7 +27,7 @@
 <meta property="og:description" content="有关极限和超实数（非标准分析） 在传统的高数课本中，无穷小 $\Delta x \to 0$ 被定义为一个“永远无法到达”的动态逼近过程。而在超实数系 $\mathbb{^*R}$ 中，这种动态过程被彻底取消，取而代之的是一个高维的、静态的微观宇宙：  无穷小量： 它不再是一个无限缩小的过程，而是一个确切存在且严格不为 0 的数字。它的绝对值小于任何正标准实数 无穷大量： 同理，是绝对值严格大于">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-05-12T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-05-22T11:26:22.767Z">
+<meta property="article:modified_time" content="2026-05-22T11:39:31.906Z">
 <meta property="article:author" content="goyeah">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="高等数学">
@@ -399,8 +399,9 @@ mjx-container[display="true"] + br {
 <p>在超实数系中，每一个有限的超实数都可以唯一分解为：标准实数 + 无穷小量</p>
 <p>由此引入了算子<strong>标准部分 $\text{std}()$（趋核运算, 其实就是求极限）</strong>：$ \text{std}(x + dx) = x $ </p>
 <p>它的几何意义是从超实数系向实数系<strong>降维投影</strong>，将带有无穷小毛刺的超实数，锚定回标准实数轴上的“核值”</p>
-<h4 id="为什么必须先进行实数运算，后进行趋核运算"><a href="#为什么必须先进行实数运算，后进行趋核运算" class="headerlink" title="为什么必须先进行实数运算，后进行趋核运算"></a>为什么必须先进行实数运算，后进行趋核运算</h4><ul>
-<li><p>**信息黑洞：**对于未定式如果提前向实数系投影，超实数系里的结构信息（相对变化率）会彻底丢失</p>
+<p><strong>为什么必须先进行实数运算，后进行趋核运算？</strong></p>
+<ul>
+<li><p>**信息丢失：**对于未定式如果提前向实数系投影，超实数系里的结构信息（相对变化率）会彻底丢失</p>
 </li>
 <li><p><strong>趋核速度（无穷小的阶）：</strong> 极限的博弈本质上是速度的较量。$dx^2$ 缩水归零的速度无限快于 $dx$</p>
 </li>
