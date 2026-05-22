@@ -27,7 +27,7 @@
 <meta property="og:description" content="有关极限和超实数（非标准分析） 在传统的高数课本中，无穷小 $\Delta x \to 0$ 被定义为一个“永远无法到达”的动态逼近过程。而在超实数系 $\mathbb{^*R}$ 中，这种动态过程被彻底取消，取而代之的是一个高维的、静态的微观宇宙：  无穷小量： 它不再是一个无限缩小的过程，而是一个确切存在且严格不为 0 的数字。它的绝对值小于任何正标准实数 无穷大量： 同理，是绝对值严格大于">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-05-12T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-05-22T12:09:58.562Z">
+<meta property="article:modified_time" content="2026-05-22T13:12:54.825Z">
 <meta property="article:author" content="goyeah">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="高等数学">
@@ -336,7 +336,7 @@ mjx-container[display="true"] + br {
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          1.7k 字
         
       </span>
     
@@ -347,7 +347,7 @@ mjx-container[display="true"] + br {
         
         
         
-          12 分钟
+          14 分钟
         
       </span>
     
@@ -426,15 +426,39 @@ mjx-container[display="true"] + br {
 <p>“可导是说，它们不仅依偎在一起，而且Y们靠近y的速度不会比X们靠近x的速度慢，也就是速度一样或者速度更快。”</p>
 <p>——《张宇30讲》</p>
 </blockquote>
-<h4 id="一、-存在："><a href="#一、-存在：" class="headerlink" title="一、 存在："></a><strong>一、 存在：</strong></h4><p> 现代数学中的函数并非一条物理意义上连绵不断的实体线条，而是由无数个孤立的“有序数对”构成的集合；“给了一个 $x$，就有一个 $y$ 对应” 意味着这些点在坐标系中各自独立、冷漠且没有任何先天的物理连接，它们就像宇宙中悬浮的散沙，无牵无挂地占据着自己的坐标，展现了函数最原始且不受任何约束的离散本质。</p>
-<h4 id="二、连续："><a href="#二、连续：" class="headerlink" title="二、连续："></a><strong>二、连续：</strong></h4><p>连续并不是用某种几何胶水将零维的点粘合在一起，而是建立在超实数系上的一道微观纪律，它规定：当自变量 $x$ 发生一个非零的无限小偏移 $dx$ 时，因变量的增量 $\Delta y$ 也必然是一个无限小量。这种代数约束，保证了函数在微观下被死死限制在同一个单子内部，绝对禁止产生任何宏观实数距离，从而逼迫这些本质上互不相连的孤立点，排布成了一个在我们眼中严丝合缝的稠密阵列。</p>
-<h4 id="三、-可导："><a href="#三、-可导：" class="headerlink" title="三、 可导："></a><strong>三、 可导：</strong></h4><p>单纯的连续只要求 $\Delta y$ 是一个无限小量，但它对速度极其宽容，允许 $\Delta y$ 是一个“跑得非常慢”的无限小（例如 $\Delta y = \sqrt{dx}$）</p>
+<h4 id="1-存在："><a href="#1-存在：" class="headerlink" title="1. 存在："></a><strong>1. 存在：</strong></h4><p> 现代数学中的函数并非一条物理意义上连绵不断的实体线条，而是由无数个孤立的“有序数对”构成的集合；“给了一个 $x$，就有一个 $y$ 对应” 意味着这些点在坐标系中各自独立、冷漠且没有任何先天的物理连接，它们就像宇宙中悬浮的散沙，无牵无挂地占据着自己的坐标，展现了函数最原始且不受任何约束的离散本质。</p>
+<h4 id="2-连续："><a href="#2-连续：" class="headerlink" title="2. 连续："></a><strong>2. 连续：</strong></h4><p>连续并不是用某种几何胶水将零维的点粘合在一起，而是建立在超实数系上的一道微观纪律，它规定：当自变量 $x$ 发生一个非零的无限小偏移 $dx$ 时，因变量的增量 $\Delta y$ 也必然是一个无限小量。这种代数约束，保证了函数在微观下被死死限制在同一个单子内部，绝对禁止产生任何宏观实数距离，从而逼迫这些本质上互不相连的孤立点，排布成了一个在我们眼中严丝合缝的稠密阵列。</p>
+<h4 id="3-可导："><a href="#3-可导：" class="headerlink" title="3.  可导："></a><strong>3.  可导：</strong></h4><p>单纯的连续只要求 $\Delta y$ 是一个无限小量，但它对速度极其宽容，允许 $\Delta y$ 是一个“跑得非常慢”的无限小（例如 $\Delta y = \sqrt{dx}$）</p>
 <p>而在超实数系中，求导的本质是计算两者在微观下的相对比例，即求比值 $\frac{\Delta y}{dx}$ 的标准实数部分。</p>
 <p>如果 $Y$ 靠近 $y$ 的速度比 $X$ 慢（$\Delta y$ 是低阶无限小），那么在这个微观除法中，分母 $dx$ 缩小得太快，会导致整个比值瞬间爆炸成一个发散出去的“无限大”，从而没有对应的标准实数部分，在几何上化作不可导的垂直。</p>
 <p>因此，为了让导数安全坍缩成一个合法的实数，$\Delta y$ 缩小的速度，绝不能拖 $dx$ 的后腿——它必须与 $dx$ 保持严格的同频同步（速度一样，同阶无限小，斜率为常数），或者比 $dx$ 缩小得还要猛烈（速度更快，高阶无限小，斜率为零）</p>
 <blockquote>
 <p>虽然不可导时比值发散到无穷大，但是直觉上会感觉 “诶这个无穷大能不能比阶” ，实际上也是可以并且有应用的，这里不展开。</p>
 <p>“诶诶不展开哦不展开” ——一位哲人</p>
+</blockquote>
+<blockquote>
+<p>2026.5.22</p>
+</blockquote>
+<hr>
+<h3 id="尖点的平滑化——带绝对值的可导性"><a href="#尖点的平滑化——带绝对值的可导性" class="headerlink" title="尖点的平滑化——带绝对值的可导性"></a>尖点的平滑化——带绝对值的可导性</h3><hr>
+<p>假设函数 $f(x)$ 在 $x=a$ 处连续，函数 $F(x) = f(x)|x - a|$ 在 $x=a$ 处的可导性分析：</p>
+<h4 id="1-导数的定义"><a href="#1-导数的定义" class="headerlink" title="1. 导数的定义"></a>1. 导数的定义</h4><p>根据导数的定义有</p>
+<p>$$F'(a) = \lim_{x \to a} \frac{f(x)|x - a| - f(a)|a - a|}{x - a} = \lim_{x \to a} \frac{f(x)|x - a|}{x - a}$$</p>
+<p>分别考虑左右极限：</p>
+<p>$F'_+(a) = \lim_{x \to a^+} \frac{f(x)(x-a)}{x-a} = \lim_{x \to a^+} f(x) = f(a)$</p>
+<p>$F'_-(a) = \lim_{x \to a^-} \frac{f(x)(-(x-a))}{x-a} = \lim_{x \to a^-} (-f(x)) = -f(a)$</p>
+<h4 id="2-可导的充要条件"><a href="#2-可导的充要条件" class="headerlink" title="2. 可导的充要条件"></a>2. 可导的充要条件</h4><p>由 $F'_+(a) = F'_-(a)$ 得</p>
+<p>$$f(a) = -f(a) \implies 2f(a) = 0 \implies f(a) = 0$$</p>
+<blockquote>
+<p><strong>结论</strong>：当且仅当 $f(a) = 0$ 时，$F(x)$ 在 $x=a$ 处可导，且此时 $F'(a) = 0$</p>
+</blockquote>
+<h4 id="3-几何直觉"><a href="#3-几何直觉" class="headerlink" title="3. 几何直觉"></a>3. 几何直觉</h4><ul>
+<li><strong>尖点效应</strong>：$|x-a|$ 在 $x=a$ 处存在不连续的斜率（左侧 $-1$，右侧 $+1$）</li>
+<li><strong>平滑化</strong>：$f(x)$ 必须在 $x=a$ 处取零，才能消除左右斜率的差异，使曲线在该点处变得平滑。</li>
+</ul>
+<blockquote>
+<p>对于绝对值内较复杂的多项式可以因式分解，利用 $|f(x)g(x)h(x)|=|f(x)||g(x)||h(x)|$ 拆开</p>
+<p>“一定要回归定义” ——一位哲人</p>
 </blockquote>
 <blockquote>
 <p>2026.5.22</p>
